@@ -61,19 +61,21 @@ footer{
     background: #1a191d;
     height: 200px;
 }
-.dws-menu{float: left;}
+.dws-menu,.log{float: left;}
 .dws-menu ul,
-.dws-menu ol{
+.dws-menu ol,
+.log ul,
+.log ol{
     list-style: none;
 }
-.dws-menu> ul{
+.dws-menu> ul,.log> ul{
     display: flex;
     margin-bottom: 0px;
     margin-top: 0px;
     padding-left: 0px;
     padding-right: 10px;
 }
-.dws-menu> ul li a{
+.dws-menu> ul li a,.log> ul li a{
     display: block;
     padding: 15px 20px 15px 20px;
     font-size: 14px;
@@ -82,7 +84,7 @@ footer{
     text-transform: uppercase;
     transition: all 0.3s ease;
 }
-.dws-menu>ul li{
+.dws-menu>ul li,.log>ul li{
     position: relative;
 }
 .search{
@@ -101,4 +103,20 @@ footer{
     outline: none;
     padding: 0 15px;
     border-radius: 5px 0 0 5px;
+    font-size: 14px;
+}
+.search>input[type="submit"]{
+    position: relative;
+    background: #f2982f;
+    height: 30px;
+    left: -5px;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+.log{
+    margin-left: 100px;
 }
