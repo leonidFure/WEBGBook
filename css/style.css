@@ -3,6 +3,7 @@
 }
 body{
     margin: 0px;
+    background: #ECF7F7;
 }
 .row:after{
   visibility: hidden;
@@ -25,14 +26,11 @@ header{
     margin-bottom: 10px;
 }
 .inner-header{
-    
     width: 100%;
-    background: #1a191d;
+    background: #1f1e22;
     height: 60px;
     padding-top: 8px;
-    padding-bottom: 10px;
     padding-left: 100px;
-    
 }
 .logo{
     float: left;
@@ -42,7 +40,6 @@ header{
     float: left;
 }
 .inner-content{
-    background: #1a191d;
     min-height: 500px;
 }
 .sidebar{
@@ -77,15 +74,43 @@ footer{
 }
 .dws-menu> ul li a,.log> ul li a{
     display: block;
-    padding: 15px 20px 15px 20px;
+    padding: 10px 20px 22px 20px;
     font-size: 14px;
     color: #ECF7F7;
     text-decoration: none;
     text-transform: uppercase;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
+    margin-top: 4px;
+}
+.dws-menu> ul li a[class="droped"]{
+    color: #000000;
+    margin-top: 0px;
+    padding: 10px 20px 10px 20px;
 }
 .dws-menu>ul li,.log>ul li{
     position: relative;
+}
+.dws-menu li a:hover,.log li a:hover{
+    color: #7e766d;
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.dws-menu li a[class="droped"]:hover{
+    background: #b7b7b7;;
+    border: none;
+    border-radius: 0 0 0 0;
+}
+.dws-menu li ul{
+    position: absolute;
+    min-width: 150px;
+    padding: 0;
+    background: #ECF7F7;
+    display: none;
+    box-shadow: 0 0 5px #6f6f6f;
+}
+.dws-menu li:hover >ul{
+    display: block;
 }
 .search{
     float: left;
@@ -117,6 +142,10 @@ footer{
     cursor: pointer;
     font-size: 14px;
 }
+.search>input[type="submit"]:hover{
+    background: #6f6f6f;
+    transition: all 0.3s ease;
+}
 .log{
-    margin-left: 100px;
+    margin-left: 90px;
 }
